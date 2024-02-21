@@ -20,46 +20,45 @@ public class NurseryBase implements Base {
     }
 
     private void init(){
-        AbstractPet cat = new Cat("Киса", LocalDate.of(2023, 1, 11));
+        AbstractPet cat = new Cat("Гизма", LocalDate.of(2019, 1, 11));
 
-        cat.learnSkill(new Skill("Поймать мышь"));
-        cat.learnSkill(new Skill("Лечебный Ур-Ур-Ур"));
+        cat.learnSkill(new Skill("Ловить мышей"));
+        cat.learnSkill(new Skill("Мурлыкать"));
         dbAnimals.put(cat.getId(), cat);
 
-        AbstractPet dog = new Dog("Шаня", LocalDate.of(2021, 3, 14));
+        AbstractPet dog = new Dog("Шаня", LocalDate.of(2016, 3, 14));
         dog.learnSkill(new Skill("Поймать фрисби"));
         dog.learnSkill(new Skill("Лежать"));
         dbAnimals.put(dog.getId(), dog);
 
-        AbstractPet hamster = new Hamster("Хома", LocalDate.of(2022, 4, 1));
-        hamster.learnSkill(new Skill("Сделать норку из обрывков газеты"));
-        hamster.learnSkill(new Skill("Притвориться мертвым"));
+        AbstractPet hamster = new Hamster("Мелкий", LocalDate.of(2024, 1, 1));
+        hamster.learnSkill(new Skill("Сделать норку"));
+        hamster.learnSkill(new Skill("Спать"));
         dbAnimals.put(hamster.getId(), hamster);
 
-        AbstractPackAnimal horse = new Horse("Стрела", LocalDate.of(2021, 2, 4));
+        AbstractPackAnimal horse = new Horse("Айвенго", LocalDate.of(2021, 2, 4));
         horse.setLoadCapacity(300);
-        horse.learnSkill(new Skill("Бег трусцой"));
-        horse.learnSkill(new Skill("Прыжок через препятствие"));
-        horse.learnSkill(new Skill("Бег галопом"));
+        horse.learnSkill(new Skill("Бег"));
+        horse.learnSkill(new Skill("Прыжок"));
         dbAnimals.put(horse.getId(), horse);
 
-        AbstractPackAnimal horse2 = new Horse("Плотва", LocalDate.of(2022, 12, 1));
+        AbstractPackAnimal horse2 = new Horse("Ванда", LocalDate.of(2022, 12, 1));
         horse2.setLoadCapacity(400);
-        horse2.learnSkill(new Skill("Шуточный укус наездника"));
-        horse2.learnSkill(new Skill("Неожиданно появиться ниоткуда"));
+        horse2.learnSkill(new Skill("Кусать"));
+        horse2.learnSkill(new Skill("Прыгать"));
         dbAnimals.put(horse2.getId(), horse2);
 
-        AbstractPackAnimal donkey = new Donkey("Осел", LocalDate.of(2020, 8, 24));
+        AbstractPackAnimal donkey = new Donkey("Иа", LocalDate.of(2018, 8, 24));
         donkey.setLoadCapacity(500);
-        donkey.learnSkill(new Skill("Встать на задние ноги"));
-        donkey.learnSkill(new Skill("Спеть песню"));
-        donkey.learnSkill(new Skill("Приручить дракона"));
+        donkey.learnSkill(new Skill("Идти быстро"));
+        donkey.learnSkill(new Skill("Идти медленно"));
+        donkey.learnSkill(new Skill("Упрямиться"));
         dbAnimals.put(donkey.getId(), donkey);
 
-        AbstractPackAnimal camel = new Camel("Самец", LocalDate.of(2020, 5, 20));
+        AbstractPackAnimal camel = new Camel("Боря", LocalDate.of(2023, 5, 20));
         camel.setLoadCapacity(1000);
-        camel.learnSkill(new Skill("Плюнуть на 5 метров"));
-        camel.learnSkill(new Skill("Поиграть горбами"));
+        camel.learnSkill(new Skill("Плюнуть"));
+        camel.learnSkill(new Skill("Присесть"));
         dbAnimals.put(camel.getId(), camel);
     }
     @Override
