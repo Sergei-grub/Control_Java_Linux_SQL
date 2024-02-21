@@ -1,0 +1,33 @@
+    1  ls
+    2  cd /home/
+    3  ls
+    4  cd ControlTask/
+    5  ls
+    6  mkdir animals
+    7  mv human_friends.txt animals
+    8  cd animals/
+    9  ls
+   10  cat human_friends.txt
+   11  clean
+   12  clear
+   13  sudo apt update
+   14  sudo apt install gnupg
+   15  wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+   16  ll
+   17  sudo dpkg -i mysql-apt-config
+   18  ls
+   19  cd /tmp
+   20  wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+   21  sudo dpkg -i mysql-apt-config
+   22  sudo dpkg -i mysql-apt-config*
+   23  sudo apt update
+   24  sudo apt install mysql-server
+   25  sudo systemctl status mysql
+   26  ll
+   27  history
+   28  clean
+   29  clear
+   30  sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb
+   31  sudo dpkg -r mysql-apt-config
+   32  sudo dpkg --purge mysql-apt-config
+   33  history
